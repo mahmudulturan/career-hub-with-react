@@ -7,13 +7,6 @@ body{
   font-family: 'Manrope', sans-serif;
 }
 
-.gradient-text {
-  background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(to right, #FFA500, #FF4500); /* Customize the gradient colors */
-  -webkit-background-clip: text; /* For Safari support */
-}
-
 
 
 
