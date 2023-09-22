@@ -1,4 +1,8 @@
 import PropTypes from 'prop-types';
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { AiOutlineDollarCircle } from "react-icons/ai";
+import { Link } from 'react-router-dom';
+
 const Job = ({job}) => {
     const {id, logo, job_title, company_name, remote_or_onsite, location, job_type, salary} = job;
     return (
@@ -10,11 +14,15 @@ const Job = ({job}) => {
                 <span className='px-5 py-2 border border-solid rounded-md gradient-text border-gradient-text font-extrabold border-[#7E90FE]'>{remote_or_onsite}</span>
                 <span className='px-5 py-2 border border-solid rounded-md gradient-text border-gradient-text font-extrabold border-[#7E90FE]'>{job_type}</span>
             </div>
-            <div>
-                <span>{location}</span>
-                <span>{salary}</span>
+            <div className='flex gap-6'>
+                <span className='text-xl font-medium flex gap-2 items-center'><HiOutlineLocationMarker></HiOutlineLocationMarker>{location}</span>
+                <span className='text-xl font-medium flex gap-2 items-center'><AiOutlineDollarCircle></AiOutlineDollarCircle>Salary: {salary}</span>
             </div>
-            <button className="btn gradient-bg text-white font-extrabold">View Details</button>
+            <div>
+                <Link to={`/job/${id}`}>
+                <button className="btn gradient-bg text-white font-extrabold">View Details</button>
+                </Link>
+            </div>
         </div>
     );
 };
