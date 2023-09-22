@@ -28,7 +28,7 @@ const AppliedJobs = () => {
         }
   }
   return (
-    <div className="my-32 w-3/4 mx-auto">
+    <div className="my-32 md:w-3/4 mx-auto">
       <h1 className="text-3xl font-extrabold text-center">Applied Jobs</h1>
       <div className="relative">
         <div className="right-3 absolute">

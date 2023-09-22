@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div>
       <footer className=" p-10 bg-[#1A1919] mt-32 text-white">
-        <div className="footer w-3/4 mx-auto">
+        <div className="footer md:w-3/4 mx-auto">
         <aside>
           <div className="space-y-5">
             <h1 className="text-3xl font-extrabold">CareerHub</h1>
