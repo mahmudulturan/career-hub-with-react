@@ -1,0 +1,11 @@
+.gradient-text {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #7E90FE, #9873FF);
+
+  }
+  
+.gradient-bg {
+    background-image: linear-gradient(to right, #7E90FE, #9873FF);
+  }
+  

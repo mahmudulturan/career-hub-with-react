@@ -8,10 +8,10 @@ const Header = () => {
   </>
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar my-6">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost p-0 m-0 lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -42,7 +42,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link className="btn font-extrabold text-white bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">Start Applying</Link>
+          <Link className="btn font-extrabold btn-sm md:btn md:text-white md:font-bold text-white bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">Start Applying</Link>
         </div>
       </div>
     </div>
