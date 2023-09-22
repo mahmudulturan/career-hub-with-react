@@ -7,8 +7,8 @@ const Header = () => {
     <li className="font-bold"><NavLink to='/blogs' className={({isActive}) => isActive && 'text-[#7E90FE]'}>Blog</NavLink></li>
   </>
   return (
-    <div>
-      <div className="navbar my-6">
+    <div className="category">
+      <div className="navbar w-3/4 mx-auto py-6">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost p-0 m-0 lg:hidden">
